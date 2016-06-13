@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Motif</string>
+    <string name="start_button_text">Start</string>
+    <string name="find_gallery_title">Choose a gallery</string>
+    <string-array name="gallery_entries">
+        <item>GreenHill Art Gallery</item>
+    </string-array>
+    <string name="greenhill_banner_description">GreenHill Banner</string>
+</resources>
