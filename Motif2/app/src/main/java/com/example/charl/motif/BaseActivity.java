@@ -31,6 +31,9 @@ public abstract class BaseActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Remove default title text
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         frameLayout = (FrameLayout)findViewById(R.id.content_frame);
 
         /**FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
