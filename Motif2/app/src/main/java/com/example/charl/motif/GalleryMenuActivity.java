@@ -3,17 +3,11 @@ package com.example.charl.motif;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class GalleryMenuActivity extends BaseActivity {
+public class GalleryMenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        /**
-         * Adding our layout to parent class frame layout (adds navigation drawer).
-         */
-        getLayoutInflater().inflate(R.layout.activity_gallery_menu, frameLayout);
-
-        //setContentView(R.layout.activity_gallery_menu);
+        setContentView(R.layout.activity_gallery_menu);
     }
 }

@@ -9,19 +9,12 @@ import android.widget.ListView;
 import android.content.Intent;
 
 
-public class FindGalleryActivity extends BaseActivity {
+public class FindGalleryActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        /**
-         * Adding our layout to parent class frame layout (adds navigation drawer).
-         */
-        getLayoutInflater().inflate(R.layout.activity_find_gallery, frameLayout);
-
-        //setContentView(R.layout.activity_find_gallery);
-
+        setContentView(R.layout.activity_find_gallery);
         //Listener for the ListView in the FindGalleryActivity
         AdapterView.OnItemClickListener listItemClickListener = new AdapterView.OnItemClickListener(){
 

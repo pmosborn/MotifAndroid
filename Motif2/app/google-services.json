@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "853894731302",
+    "project_id": "firebase-motif"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853894731302:android:14db4738d5ba3ad6",
+        "android_client_info": {
+          "package_name": "com.example.charl.motif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853894731302-kubaijoitrj5cscj3qchjoftihdtf751.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.charl.motif",
+            "certificate_hash": "493F83B6ED27A2B54FF96A3800A83E86AAE3EB62"
+          }
+        },
+        {
+          "client_id": "853894731302-u0gnfj6k8hjareqm6b4l1t2cccras37r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEwODCEAmPQQ1Xe3aHikwO0rcKJYx_zBI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
