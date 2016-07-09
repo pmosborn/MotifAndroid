@@ -31,7 +31,6 @@ public class LoginScreenActivity extends AppCompatActivity implements GoogleApiC
     private int RC_SIGN_IN = 100;
     private CallbackManager callbackManager;
     private TextView textViewName;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
