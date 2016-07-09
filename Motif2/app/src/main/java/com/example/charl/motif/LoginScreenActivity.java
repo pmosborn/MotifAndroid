@@ -29,8 +29,9 @@ public class LoginScreenActivity extends AppCompatActivity implements GoogleApiC
     private GoogleSignInOptions gso;
     private GoogleApiClient mGoogleApiClient;
     private int RC_SIGN_IN = 100;
-    private TextView textViewName;
     private CallbackManager callbackManager;
+    private TextView textViewName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class LoginScreenActivity extends AppCompatActivity implements GoogleApiC
         setContentView(R.layout.activity_login_screen);
         LoginButton  loginButton = (LoginButton) findViewById(R.id.login_button);
         textViewName = (TextView) findViewById(R.id.textViewName);
+
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
 
 
@@ -103,10 +105,13 @@ public class LoginScreenActivity extends AppCompatActivity implements GoogleApiC
                 GoogleSignInAccount acct = result.getSignInAccount();
 
                 //Displaying name
-                textViewName.setText(acct.getDisplayName());
+
+               textViewName.setText(acct.getDisplayName());
+
+
+
                 Intent goto_find_gallery = new Intent(getApplicationContext(),FindGalleryActivity.class);
                 startActivity(goto_find_gallery);
-
             } else {
                 //If login fails
                 Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show();
